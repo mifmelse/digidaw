@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 02, 2022 at 05:37 PM
+-- Generation Time: Jul 03, 2022 at 05:53 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -46,6 +46,27 @@ INSERT INTO `gudanggaram` (`id_produk`, `nama_barang`, `brand`, `harga_barang`, 
 (10, 'Tembakau Racikan', 'Longlat', 5000, 26),
 (13, 'Filter', 'GudangGaram', 18000, 5);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gudanggaram2`
+--
+
+CREATE TABLE `gudanggaram2` (
+  `id_produk` int(11) NOT NULL,
+  `nama_barang` varchar(20) NOT NULL,
+  `brand` varchar(20) NOT NULL,
+  `harga_barang` int(5) NOT NULL,
+  `stok_barang` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `gudanggaram2`
+--
+
+INSERT INTO `gudanggaram2` (`id_produk`, `nama_barang`, `brand`, `harga_barang`, `stok_barang`) VALUES
+(2, 'Surya Pro Mild', 'Surya', 18000, 1);
+
 --
 -- Indexes for dumped tables
 --
@@ -54,6 +75,12 @@ INSERT INTO `gudanggaram` (`id_produk`, `nama_barang`, `brand`, `harga_barang`, 
 -- Indexes for table `gudanggaram`
 --
 ALTER TABLE `gudanggaram`
+  ADD PRIMARY KEY (`id_produk`);
+
+--
+-- Indexes for table `gudanggaram2`
+--
+ALTER TABLE `gudanggaram2`
   ADD PRIMARY KEY (`id_produk`);
 
 --
